@@ -1,1 +1,0 @@
-CMakeLists.txt not found in D:\Git(s)\viktorexe\c-for-beginners Select CMakeLists.txt
