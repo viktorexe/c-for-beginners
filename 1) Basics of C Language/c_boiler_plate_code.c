@@ -9,5 +9,6 @@ int main() {
 /*
 This is a c language boiler plate code, a.k.a the main code you will use for every other c file
 How does this code works?
-First this code is  
+First this code is  taken by compiler and translated in such a way for CPU to understand
+(Converts to binary) 
 */
