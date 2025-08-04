@@ -1,0 +1,1 @@
+// A variable is name given to a space in memory
