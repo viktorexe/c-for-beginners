@@ -3,9 +3,26 @@
 // datatype variable_name;
 // For example to define an integer datatype with variable name a
 // int a;
-
+// a = 6;
+// OR
+// int a = 6;
 // Rules for Naming Variables
 // Start with a letter or underscore (_)
 // Don’t use spaces or special characters
 // Can’t be a C keyword like int, return, etc.
 // Use meaningful names (e.g., marks, not x)
+
+/* Datatypes in C
+ * int - to store integer value
+ * float - to save decimal value (4 byte)
+ * char - to store character (only one character)
+ * double - more precise decimal number
+ */
+
+/* Format Specifiers for different datatypes, to print for example int a, we need to type %d inside ""
+ * int - %d
+ * float - %f
+ * double - %lf
+ * char - %c
+ * float (upto 2 decimal places only) - %.2f
+ */
