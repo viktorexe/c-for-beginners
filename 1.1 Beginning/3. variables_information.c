@@ -19,10 +19,17 @@
  * double - more precise decimal number
  */
 
-/* Format Specifiers for different datatypes, to print for example int a, we need to type %d inside ""
+/* Format Specifiers for different datatypes, to print for example int a, we need to type printf("%d", a) inside ""
  * int - %d
  * float - %f
  * double - %lf
  * char - %c
  * float (upto 2 decimal places only) - %.2f
+ */
+
+/* The variables consume different amount of memory in RAM
+ * int - 4 byte
+ * char - 1 byte
+ * float - 4 byte
+ * double - 8 byte 
  */
