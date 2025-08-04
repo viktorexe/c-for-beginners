@@ -31,5 +31,5 @@
  * int - 4 byte
  * char - 1 byte
  * float - 4 byte
- * double - 8 byte 
+ * double - 8 byte
  */
