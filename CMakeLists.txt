@@ -1,15 +1,18 @@
 cmake_minimum_required(VERSION 3.31)
-project(c_for_beginners)
+project(c_for_beginners C)
 
-set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_C_STANDARD 11)
 
-add_executable(c_for_beginners
-        .idea/.gitignore
-        .idea/c-for-beginners.iml
-        .idea/modules.xml
-        .idea/vcs.xml
-        .idea/workspace.xml
-        1.1_Beginning/1_print_statement.c
+# Automatically collect all .c files recursively
+file(GLOB_RECURSE SOURCE_FILES
+        "${CMAKE_SOURCE_DIR}/*.c"
 )
-file(GLOB_RECURSE SOURCES "*.c" "*.cpp" "*.h")
-add_executable(my_project ${SOURCES})
+
+# Create a separate executable for each .c file with its own main()
+foreach(SOURCE_FILE ${SOURCE_FILES})
+    # Get the file name without directory and extension
+    get_filename_component(FILE_NAME ${SOURCE_FILE} NAME_WE)
+
+    # Create an executable for each source file
+    add_executable(${FILE_NAME} ${SOURCE_FILE})
+endforeach()
