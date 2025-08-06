@@ -5,6 +5,8 @@ int main() {
     if (a>1) {
         printf("a is greater than 1");
     }
-    else
+    else {
+        printf("a is less than 1");
+    }
     return 0;
 }
