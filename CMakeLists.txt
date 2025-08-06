@@ -14,5 +14,8 @@ foreach(SOURCE_FILE ${SOURCE_FILES})
     get_filename_component(FILE_NAME ${SOURCE_FILE} NAME_WE)
 
     # Create an executable for each source file
-    add_executable(${FILE_NAME} ${SOURCE_FILE})
+    add_executable(${FILE_NAME} ${SOURCE_FILE}
+            1.1_Beginning/3_operators.c
+            1.1_Beginning/3_operators2.c
+            "1.1_Beginning/3_operators_associativity.c")
 endforeach()
