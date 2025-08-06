@@ -5,5 +5,6 @@ int main() {
     if (a>1) {
         printf("a is greater than 1");
     }
+    else
     return 0;
 }
